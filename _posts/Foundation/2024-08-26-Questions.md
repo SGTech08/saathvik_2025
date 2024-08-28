@@ -14,7 +14,7 @@ menu: nav/tools_setup.html
 
   Files from GitHub are transferred to my local machine using the `git clone` command, which copies the repository files to my local system. To navigate these files, I can either use Visual Studio Code (VSCode) by clicking through the file explorer or by using the `cd` command in the terminal.
 
-- **How are the files updated in GitHub? How do you navigate to those files?**
+- **How are the files upddwated in GitHub? How do you navigate to those files?**
 
   Files are updated on GitHub by making changes locally, then committing and pushing those changes back to the repository. This is done using commands like `git commit` and `git push`. I can view these changes by visiting the GitHub repository and browsing through the files.
 
