@@ -98,30 +98,68 @@ hide: true
         <p>Welcome to my page! As you can see I am a aspiring computer engineer hoping to advance my skills with this portfolio project. Thank you for visiting and make sure to check out my socials so we can connect!</p>
 
         <div class="section games">
-            <h2>🎮 Games</h2>
-            <p>These are some simple games I made or experimented with:</p>
+            <h2>🎮 Games and Mini Projects</h2>
+            <p>These are some simple Projects I developed to further advance my skills:</p>
             <ul>
-                <li><a href="#">Snake</a>: The classic snake game made by outside sources; I experimented with it last year to understand how it would work.</li>
-                <li><a href="#">Dodging Game</a>: A dodging game I made with my partner last year, which involves event listeners and boundaries. ChatGPT helped us a lot with this game.</li>
+                <li><a href="https://sgtech08.github.io/student//2023/08/30/snake-game.html">Snake</a>: The classic snake game made by outside sources; I experimented with it last year to understand how it would work.</li>
+                <li><a href="https://sgtech08.github.io/student//5.a/c4.1/2023/09/05/Pong-game_IPYNB_2_.html">Pong Game</a>: A Pong game I made with my partner last year, which involves event listeners and boundaries. ChatGPT helped us a lot with this game.</li>
+                <li><a href="https://sgtech08.github.io/student//5.a/c4.1/2023/09/05/movie-searchapi.html">Movie Searcher</a>: First time using an API to fetch movies based on the search request made by the user. Funcitonality involves seasons and/or movies.</li>
+                <li><a href="https://sgtech08.github.io/student//5.a/c4.1/2023/09/03/wikipedia-search.html">Wikipedia Search Bar</a>:Simple API request to wikipedia based on a term requested by a user. Program only shows the summary of the given term to eliminate redundancy.</li>
             </ul>
         </div>
 
-        <div class="section trivia">
+     <div class="section trivia">
             <h2>⭐ Trivia Quiz about Me</h2>
             <p>Take this quiz about me. Try to get all of them correct!</p>
-            <form>
+            <form id="quizForm">
                 <label>
-                    What is my favorite color?
-                    <input type="radio" name="color" value="blue"> Blue
-                    <input type="radio" name="color" value="red"> Red
-                    <input type="radio" name="color" value="green"> Green
-                    <input type="radio" name="color" value="purple"> Purple
+                    What am I aspiring to be?
+                    <select name="question1">
+                        <option value="doctor">Doctor</option>
+                        <option value="engineer">Software Engineer</option>
+                        <option value="lawyer">Lawyer</option>
+                        <option value="artist">Artist</option>
+                    </select>
                 </label>
                 <label>
-                    What is my favorite hobby?
-                    <!-- Add more questions here as needed -->
+                    What grade am I in?
+                    <select name="question2">
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select>
                 </label>
+                <label>
+                    What is one of my hobbies?
+                    <select name="question3">
+                        <option value="cooking">Cooking</option>
+                        <option value="shoe">Shoe Enthusiast</option>
+                        <option value="painting">Painting</option>
+                        <option value="gaming">Gaming</option>
+                    </select>
+                </label>
+                <label>
+                    What do I want to be?
+                    <select name="question4">
+                        <option value="musician">Musician</option>
+                        <option value="engineer">Software Engineer</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="athlete">Athlete</option>
+                    </select>
+                </label>
+                <label>
+                    How many APs am I taking?
+                    <select name="question5">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <button type="button" onclick="checkAnswers()">Submit</button>
             </form>
+            <div class="result" id="result"></div>
         </div>
 
         <div class="section social">
