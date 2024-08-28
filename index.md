@@ -5,7 +5,7 @@ description: Home Page
 hide: true
 ---
 
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,47 +23,108 @@ hide: true
             width: 80%;
             margin: auto;
             padding: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards ease-in-out;
         }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         h1 {
             color: #00ff7f;
+            text-align: center;
         }
+
         .section {
             margin: 20px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards ease-in-out;
         }
+
+        .section:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .section:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .section:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .section h2 {
             border-bottom: 2px solid #00ff7f;
             padding-bottom: 10px;
             color: #ffd700;
         }
-        .section p, .section ul {
-            margin: 10px 0;
-        }
+
         .games ul {
             list-style-type: none;
             padding: 0;
         }
+
         .games li {
             margin: 10px 0;
         }
+
         .games a {
             color: #1e90ff;
             text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
+
         .games a:hover {
             text-decoration: underline;
+            color: #00ff7f;
+            transform: scale(1.05);
         }
+
         .trivia form {
             margin-top: 15px;
         }
+
         .trivia label {
             display: block;
             margin: 10px 0;
         }
+
+        .trivia button {
+            background-color: #00ff7f;
+            color: #111;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .trivia button:hover {
+            background-color: #00cc66;
+        }
+
+        .trivia button:active {
+            transform: scale(0.95);
+        }
+
         .social-buttons {
             display: flex;
             gap: 10px;
             margin-top: 10px;
+            justify-content: center;
         }
+
         .social-button {
             display: flex;
             align-items: center;
@@ -72,30 +133,39 @@ hide: true
             padding: 10px 15px;
             border-radius: 5px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
+
         .social-button i {
             margin-right: 8px;
         }
+
         .social-button.github { background-color: #6e5494; }
         .social-button.twitter { background-color: #1da1f2; }
         .social-button.linkedin { background-color: #0077b5; }
         .social-button.instagram { background-color: #e1306c; }
+
         .social-button:hover {
             background-color: #555;
+            transform: scale(1.1);
         }
+
         footer {
             text-align: center;
             margin-top: 40px;
             font-size: 0.9em;
             color: #888;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards ease-in-out;
+            animation-delay: 0.8s;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Saathvik's CSA Portfolio 🌴</h1>
-        <p>Welcome to my page! As you can see I am a aspiring computer engineer hoping to advance my skills with this portfolio project. Thank you for visiting and make sure to check out my socials so we can connect!</p>
+        <p>Welcome to my page! As you can see I am an aspiring computer engineer hoping to advance my skills with this portfolio project. Thank you for visiting and make sure to check out my socials so we can connect!</p>
 
         <div class="section games">
             <h2>🎮 Games and Mini Projects</h2>
@@ -183,7 +253,7 @@ hide: true
     </div>
 
     <footer>
-        &copy; 2024 [Saathvik]. All rights reserved.
+        &copy; 2024 Saathvik. All rights reserved.
     </footer>
 </body>
 </html>
