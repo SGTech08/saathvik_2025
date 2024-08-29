@@ -178,3 +178,82 @@ hide: true
             </ul>
         </div>
 
+     <div class="section trivia">
+            <h2>⭐ Trivia Quiz about Me</h2>
+            <p>Take this quiz about me. Try to get all of them correct!</p>
+            <form id="quizForm">
+                <label>
+                    What am I aspiring to be?
+                    <select name="question1">
+                        <option value="doctor">Doctor</option>
+                        <option value="engineer">Software Engineer</option>
+                        <option value="lawyer">Lawyer</option>
+                        <option value="artist">Artist</option>
+                    </select>
+                </label>
+                <label>
+                    What grade am I in?
+                    <select name="question2">
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </label>
+                <label>
+                    What is one of my hobbies?
+                    <select name="question3">
+                        <option value="cooking">Cooking</option>
+                        <option value="shoe">Shoe Enthusiast</option>
+                        <option value="painting">Painting</option>
+                        <option value="gaming">Gaming</option>
+                    </select>
+                </label>
+                <label>
+                    What do I want to be?
+                    <select name="question4">
+                        <option value="musician">Musician</option>
+                        <option value="engineer">Software Engineer</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="athlete">Athlete</option>
+                    </select>
+                </label>
+                <label>
+                    How many APs am I taking?
+                    <select name="question5">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <button type="button" onclick="checkAnswers()">Submit</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="section social">
+            <h2>🌐 Connect with Me</h2>
+            <p>Follow me on my social media platforms:</p>
+            <div class="social-buttons">
+                <a href="https://github.com/SGTech08" class="social-button github" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://twitter.com/" class="social-button twitter" target="_blank">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://www.linkedin.com/in/saathvik-gampa-622bbb2b9/" class="social-button linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://instagram.com/saathvik.g08" class="social-button instagram" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Saathvik. All rights reserved.
+    </footer>
+</body>
+</html>
