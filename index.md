@@ -175,6 +175,8 @@ hide: true
                 <li><a href="https://sgtech08.github.io/student//5.a/c4.1/2023/09/05/Pong-game_IPYNB_2_.html">Pong Game</a>: A Pong game I made with my partner last year, which involves event listeners and boundaries. ChatGPT helped us a lot with this game.</li>
                 <li><a href="https://sgtech08.github.io/student//5.a/c4.1/2023/09/05/movie-searchapi.html">Movie Searcher</a>: First time using an API to fetch movies based on the search request made by the user. Funcitonality involves seasons and/or movies.</li>
                 <li><a href="https://sgtech08.github.io/student//5.a/c4.1/2023/09/03/wikipedia-search.html">Wikipedia Search Bar</a>:Simple API request to wikipedia based on a term requested by a user. Program only shows the summary of the given term to eliminate redundancy.</li>
+                <img alt="describe image" src="https://t3.ftcdn.net/jpg/06/01/17/18/360_F_601171862_l7yZ0wujj8o2SowiKTUsfLEEx8KunYNd.jpg" width="100" height="200">
+
             </ul>
         </div>
 
