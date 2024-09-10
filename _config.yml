@@ -5,7 +5,7 @@ github_username: SGTech08
 github_repo: "saathvik_2025" 
 baseurl: "/saathvik_2025"
 future: true
-remote_theme: jekyll/minima/dracula
+remote_theme: jekyll/minima
 #minima:
  # skin: dark
  ## social_links:
