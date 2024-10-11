@@ -1,3 +1,11 @@
+---
+layout: post
+comments: True
+title: blog review
+courses: {'csa': {'week': 6}}
+type: ccc
+author: Saathvik Gampa
+---
 
 <head>
     <meta charset="UTF-8">
